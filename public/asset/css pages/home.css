@@ -1,0 +1,435 @@
+*{
+    font-family: 'Reem Kufi', sans-serif; 
+}
+body{
+    background-color: #eeeae8;
+}
+.bg-body-tertiary {
+    width: 100%;
+    background-color: #000000c2 !important;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 17px;
+}
+.navbar-brand {
+    font-family: 'Indie Flower', cursive !important;
+    font-size: 50px;
+    margin-left: 2%;
+    margin-right: 7%;
+    color: chocolate;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.navbar-brand span{
+    font-family: 'Indie Flower', cursive !important;
+    color: bisque;
+}
+.navbar-brand:focus, .navbar-brand:hover {
+    color: bisque;
+}
+.navbar-brand:focus span, .navbar-brand:hover span {
+    color: chocolate;
+}
+.nav-link{
+    font-size: larger;
+    color: bisque !important;
+    border:none;
+    position: relative;
+}
+.nav-link:hover {
+    color: chocolate !important;
+    cursor: pointer;
+}
+.d-flex .fa-cart-shopping span{
+    position: relative;
+    top: -28px;
+    left: -19px;
+}
+.dropdown:hover , .nav-item .bord:hover{
+    border: none;
+    color: chocolate !important;
+}
+.nav-item .disabled {
+    color: #a49583 !important;
+}
+.dropdown::after , .nav-item .bord::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left: 50%;
+    bottom:0;
+    background-color: chocolate;
+    transition: all ease-in-out .4s;
+}
+.dropdown:hover::after , .nav-item .bord:hover::after{
+    width: 100%;
+    left: 0;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: transparent;
+    color: bisque;
+}
+.dropdown-menu.show {
+    background-color: #000c;
+}
+.dropdown-menu .dropdown-item:hover i{
+    margin-left: 7%;
+    padding-right: 5%;
+    color: chocolate;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: bisque;
+    background-color: transparent;
+}
+.dropdown-item{
+    color: bisque;
+}
+.navbar .d-flex{
+    width: 15%;
+    justify-content: space-evenly;
+}
+.navbar .d-flex i {
+    font-size: 25px;
+    color: chocolate;
+}
+.navbar .d-flex i:hover{
+    color: bisque;
+    cursor: pointer;
+}
+.navbar .d-flex img{
+    width: 18%;
+}
+.navbar-toggler {
+    background-color: chocolate;
+    border: var(--bs-border-width) solid chocolate;
+}
+.banner{
+    width: 100%;
+    height: auto;                                                                                          
+}
+.banner .visible{
+    width: 100%;
+    height: auto;
+    background-color: #0000007d;
+}
+.banner video{
+    position: relative;
+    right: 0;
+    top: 5px;
+    z-index: -1;
+    width: 100%;
+}
+.banner p{
+    position: relative;
+    top: -532px;
+    left: 0%;
+    font-size: 62px;
+    font-weight: 500;
+    color: bisque;
+}
+.banner button{
+    text-align: center;
+    position: relative;
+    display: block;
+    top: -532px;
+    border-radius: 37px;
+    padding: 19px 2px;
+    border: 3px solid bisque;
+    background-color: chocolate;
+    left: 45%;
+    animation: shadow 1.2s ease-in-out .1s infinite alternate-reverse forwards;
+}
+@keyframes shadow{
+    from{box-shadow: none;}
+    to{box-shadow: -1px 1px 12px 6px bisque;}
+}
+.banner button:hover{
+    background-color: transparent;
+}
+.banner button a{
+    color: bisque !important;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 19px 37px;
+}
+.collection .text-center{
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 40px;
+    color: #393838;
+    width: 66%;
+    margin: auto;
+}
+.collection .text-center span{
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 47px !important;
+    color: chocolate;
+}
+.collection .cards{
+    justify-content: space-around;
+    margin-top: 3%;
+    flex-wrap: wrap;
+}
+.collection .cards .card_1 , .collection .cards .card_2 , .collection .cards .card_3 , .collection .cards .card_4 , .collection .cards .card_5 , .collection .cards .card_6{
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    height: 369px;
+}
+.collection .cards .card_1 .front-card , .collection .cards .card_2 .front-card , .collection .cards .card_3 .front-card , .collection .cards .card_4 .front-card , .collection .cards .card_5 .front-card , .collection .cards .card_6 .front-card{
+    width: 410px;
+    border: 3px solid #00000082;
+    height: 325px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.collection .cards .card_1 .front-card{
+    background-image: url(\\asset\\img\\bedroom.jpg);
+}
+.collection .cards .card_2 .front-card{
+    background-image: url(\\asset\\img\\kitchen.jpg);
+}
+.collection .cards .card_3 .front-card{
+    background-image: url(\\asset\\img\\dining.jpg);
+}
+.collection .cards .card_4 .front-card{
+    background-image: url(\\asset\\img\\living.png);
+}
+.collection .cards .card_5 .front-card{
+    background-image: url(\\asset\\img\\decor.png);
+    background-position: center 31%;
+}
+.collection .cards .card_6 .front-card{
+    background-image: url(\\asset\\img\\unique.jpeg);
+    background-position: center 35%;
+}
+.collection .cards .card_1 .front-card h2 , .collection .cards .card_2 .front-card h2 , .collection .cards .card_3 .front-card h2 , .collection .cards .card_4 .front-card h2 , .collection .cards .card_5 .front-card h2 , .collection .cards .card_6 .front-card h2{
+    padding-left: 51%;
+    padding-top: 2%;
+    color: #393838;
+    font-size: 36px;
+    text-shadow: -4px 3px 7px #000000db;
+}
+.collection .cards .card_3 .front-card h2{
+    padding-left: 38% !important;
+}
+.collection .cards .card_4 .front-card h2{
+    padding-left: 41% !important;
+}
+.collection .cards .card_6 .front-card h2{
+    padding-left: 45%;
+    font-size: 34px;
+}
+.collection .cards .card_1:hover , .collection .cards .card_2:hover , .collection .cards .card_3:hover , .collection .cards .card_4:hover , .collection .cards .card_5:hover , .collection .cards .card_6:hover{
+    transform: rotateY(180deg);
+}
+.collection .cards .card_1 .back-card , .collection .cards .card_2 .back-card , .collection .cards .card_3 .back-card , .collection .cards .card_4 .back-card , .collection .cards .card_5 .back-card , .collection .cards .card_6 .back-card{
+    position: relative;
+    top: -345px;
+    width: 410px;
+    border: 3px solid #00000082;
+    height: 325px;
+    background-color: #393838;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.collection .cards .card_1 .back-card h2 , .collection .cards .card_2 .back-card h2 , .collection .cards .card_3 .back-card h2 , .collection .cards .card_4 .back-card h2 , .collection .cards .card_5 .back-card h2 , .collection .cards .card_6 .back-card h2{
+    font-family: 'Reem Kufi', sans-serif !important; 
+    color: chocolate;
+    font-size: 30px;
+    padding-top: 12%;
+    padding-bottom: 3%;
+}
+.collection .cards .card_1 .back-card p , .collection .cards .card_2 .back-card p , .collection .cards .card_3 .back-card p , .collection .cards .card_4 .back-card p , .collection .cards .card_5 .back-card p , .collection .cards .card_6 .back-card p{
+    font-family: 'Reem Kufi', sans-serif !important;
+    font-size: 20px;
+    color: bisque;
+    width: 93%;
+    margin: auto;
+}
+.service p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 47px;
+    color: chocolate;
+    margin-top: 7%;
+    margin-bottom: 6%;
+}
+.service .d-flex{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service .serv1 , .service .serv2 , .service .serv3 , .service .serv4{
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+}
+.service .serv1 i , .service .serv2 i , .service .serv3 i , .service .serv4 i{
+    font-size: 30px;
+    border: 2px solid #00000082;
+    padding: 13px 12px;
+    border-radius: 36px;
+    color: chocolate;
+}
+.service .serv1 h5 , .service .serv2 h5 , .service .serv3 h5 , .service .serv4 h5{
+    color: #393838;
+    font-size: 22px;
+    width: 62%;
+    margin-left: 4%;
+}
+.about p , .review{
+    font-family: 'Dancing Script', cursive;
+    font-size: 47px;
+    color: chocolate;
+    margin-top: 7%;
+    margin-bottom: 6%;
+}
+.about .d-flex{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.about .content{
+    background-image: url(\\asset\\img\\aboutus.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+    width: 660px;
+    background-position: -26% center;
+}
+.about .contant{
+    width: 584px;
+}
+.about .contant h3{
+    width: 90%;
+    margin: 14% auto;
+    font-size: 22px;
+    line-height: 33px;
+    color: #393838;
+    text-align: justify;
+}
+.carousel-item {
+    font-size: 58px;
+    height: 200px;
+    margin-left: 0%;
+    margin-top: 0%;
+    color: #39383847;
+}
+.carousel-item i{
+    margin-left: 48%;
+}
+.carousel-caption {
+    position: absolute;
+    top: 11%;
+    left: 15%;
+    padding-top: 3.25rem;
+    padding-bottom: 1.25rem;
+    color: chocolate;
+    text-align: center;
+    font-size: 24px;
+}
+.carousel-caption h5{
+    font-size: 15px;
+    color: #393838;
+}
+.carousel-caption p{
+    font-size: 22px;
+    width: 90%;
+    margin:8px auto 15px;
+    color: #50321c;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #393838;
+}
+.carousel-control-prev-icon{
+    color:  #393838 !important;
+}
+.carousel button i{
+    color: #000;
+    font-size: 28px;
+}
+.carousel-indicators{
+    margin-bottom: 0;
+}
+.review{
+    margin-bottom: 2%;
+    margin-top: 10%;
+}
+.footer{
+    background-color: #393838;
+    margin-top: 7%;
+}
+.footer .d-flex{
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer .d-flex .about_us{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.footer .d-flex p{
+    max-width: 332px;
+    padding-top: 0%;
+    color: bisque;
+    line-height: 1.7;
+    font-size: 17px;
+    margin-top: 1%;
+}
+.footer .d-flex i{
+    font-size: 32px;
+    color: #ffe4c47d;
+    margin-right: 3%;
+}
+.footer .d-flex i:hover{
+    color: #ffe4c4db;
+    cursor: pointer;
+}
+.footer .useful{
+    flex-direction: column;
+}
+.footer .useful p{
+    color: chocolate;
+    font-size: 31px;
+}
+.footer .useful .links{
+    text-decoration: none;
+    font-size: 17px;
+    color: bisque;
+    line-height: 2;
+}
+.footer .useful .links:hover{
+    color: #ffe4c4b3;
+}
+.footer .contact .d-flex{
+    flex-direction: column;
+}
+.footer .contact .d-flex h2{
+    color: chocolate;
+    font-size: 31px;
+    margin-bottom: 9%;
+}
+.footer .contact .d-flex p{
+    line-height: 1.5;
+    margin-top: 0%;
+}
+.footer .contact i{
+    font-size: 23px;
+    padding: 3.5% 4.5%;
+    border-radius: 32px;
+    border: 2px solid #9a8c7c;
+}
+.footer .contact i:hover{
+    background-color: #9a8c7c;
+    border: #ffe4c4db;
+}
+.footer .copyright{
+    color: chocolate;
+}
+.footer .copyright i{
+    color: #aa0808;
+}
